@@ -1,0 +1,42 @@
+Button {
+    width: 75%;
+    height: 15vh;
+    margin: 3;
+}
+#back{
+    display: none;
+}
+#viewbuttons{
+    display: none;
+}
+#current{
+    dock:right;
+    background: $boost;
+    height: 95%;
+    width: 35%;
+    margin-top: 2;
+    margin-right: 2;
+}
+#selected{
+    dock:right;
+    background: $boost;
+    height: 95%;
+    width: 55%;
+    margin-top: 2;
+    margin-right: 75;
+}
+.viewing #l_button{
+    display: none;
+}
+.viewing #back{
+    display: block;
+}
+.viewing #viewbuttons{
+    display: block;
+}
+.diff Side{
+    display:none;
+}
+.diff Sidell{
+    display:none;
+}
