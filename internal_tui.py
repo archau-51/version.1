@@ -14,10 +14,12 @@ for folder in files:
 class Side(Static):
     """A widget to display."""
     
-    text = reactive(""" __   _____ _ __ ___ _  ___  _ __  
- \ \ / / _ \ '__/ __| |/ _ \| '_ \ 
-  \ V /  __/ |  \__ \ | (_) | | | |
-   \_/ \___|_|  |___/_|\___/|_| |_|
+    text = reactive("""    __ 
+  /_ |
+   | |
+   | |
+  _| |
+ (_)_| 
    
    
    
@@ -28,10 +30,10 @@ class Side(Static):
 class Sidell(Static):
     """A widget to display."""
     
-    textor = reactive("""   _____   _____ _ __ 
-  / _ \ \ / / _ \ '__|
- |  __/\ V /  __/ |   
-  \___| \_/ \___|_|      
+    textor = reactive("""   __   _____ _ __ ___ _  ___  _ __  
+ \ \ / / _ \ '__/ __| |/ _ \| '_ \ 
+  \ V /  __/ |  \__ \ | (_) | | | |
+   \_/ \___|_|  |___/_|\___/|_| |_|      
   
   
   
@@ -55,17 +57,19 @@ class EVERversion(App):
             yield Button(x, id="l_button", variant="success", name=x)
         yield Button("Restore file", id="restore", variant="warning")
         yield Side("""                   (_)            
- __   _____ _ __ ___ _  ___  _ __  
- \ \ / / _ \ '__/ __| |/ _ \| '_ \ 
-  \ V /  __/ |  \__ \ | (_) | | | |
-   \_/ \___|_|  |___/_|\___/|_| |_|
+   __ 
+  /_ |
+   | |
+   | |
+  _| |
+ (_)_| 
                                   
                     """, id="current")
         yield Sidell("""
-   _____   _____ _ __ 
-  / _ \ \ / / _ \ '__|
- |  __/\ V /  __/ |   
-  \___| \_/ \___|_|             
+__   _____ _ __ ___ _  ___  _ __  
+ \ \ / / _ \ '__/ __| |/ _ \| '_ \ 
+  \ V /  __/ |  \__ \ | (_) | | | |
+   \_/ \___|_|  |___/_|\___/|_| |_|             
                          """, id="selected")
         yield Footer()
 
