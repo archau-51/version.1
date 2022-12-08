@@ -45,7 +45,7 @@ __   _____ _ __ ___ _  ___  _ __
         """An action to toggle dark mode."""
         self.dark = not self.dark
     def on_button_pressed(self, event: Button.Pressed):
-        subprocess.run(["python3", "internal_tui.py", event.button.name])
+        subprocess.run(["python", "internal_tui.py", event.button.name])
         sys.exit()
 
 
